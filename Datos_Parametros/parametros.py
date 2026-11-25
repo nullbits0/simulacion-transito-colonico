@@ -12,11 +12,11 @@ WHC_INSOLUBLE = 3.2   # Fibra insoluble (efecto mecánico/volumen)
 # Coeficientes de Absorción Mucosal Regional [h^-1]
 # Fuente provisional: Debongnie & Phillips (1978)
 # Rango documentado en literatura: 0.15 a 0.35 h^-1 según región
-K_ABS = [0.15, 0.10, 0.05]  # [k1: Ascendente, k2: Transverso, k3: Descendente]
+K_ABS = [0.35, 0.25, 0.15]  # [k1: Ascendente, k2: Transverso, k3: Descendente]
 
 # Coeficientes de Transferencia Convectiva Intercompartimental [h^-1]
 # Basado en tiempo de tránsito total fisiológico (~48 horas)
-K_TRANS = [0.10, 0.08, 0.06]
+K_TRANS = [0.12, 0.09, 0.07]
 
 # Fracción de agua de ingesta diaria que efectivamente ingresa al ciego (%)
 # Fuente: Guyton & Hall (2021) / Johnson (2018) -> El colon recibe aprox. 1.5 L de los ~2 L ingeridos
