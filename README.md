@@ -44,8 +44,12 @@ pip install -r requirements.txt
 - **A. Verificación Básica y Generación de Evidencias:** 
  ```bash
    python Pruebas_Evidencias/pruebas_verificacion.py
+ ```
+- **B. Evaluación de Múltiples Casos Dietéticos y Escala de Bristol:** 
+ ```bash
+   python Pruebas_Evidencias/evaluar_casos.py
  ```  
-- **B. Ejecución del Grid de Escenarios (27 combinaciones de ingesta):** 
+- **C. Ejecución del Grid de Escenarios (27 combinaciones de ingesta):** 
 ```bash
    python Modelo_Fuente/matriz_escenarios.py
  ```  
@@ -63,7 +67,7 @@ pip install -r requirements.txt
 ### 8. Salidas Esperadas y Ubicación
 - **Pruebas_Evidencias/corrida_base.png:** Gráfico de la evolución de H_f(%) en el tiempo.
 - **Pruebas_Evidencias/variacion_preliminar.png:** Comparativa entre la corrida base y el incremento de fibra soluble (25 g).
-- **resultados_escenarios.csv** (generado por *matriz_escenarios.py*): Tabla con las 27 variaciones de ingesta y su humedad final.
+- **Pruebas_Evidencias/resultados_casos_prueba.csv:** Matriz de resultados con porcentaje de humedad y tipo de Bristol estimado.
 
 ### 9. Control de Aleatoriedad / Semillas
 El modelo es un sistema de Ecuaciones Diferenciales Ordinarias (EDO) determinista. No utiliza distribuciones estocásticas en esta fase, por lo que los resultados son 100% reproducibles de forma directa sin requerir semillas aleatorias (*seed*).
@@ -71,7 +75,7 @@ El modelo es un sistema de Ecuaciones Diferenciales Ordinarias (EDO) determinist
 ### 10. Problemas Conocidos y Limitaciones
 - El modelo asume mezcla perfecta e instantánea dentro de cada compartimento.
 - Los coeficientes de absorción k_abs se mantienen con valores provisionales de literatura de primer orden.
-- No se incluye la clasificación automatizada de la Escala de Bristol debido a la falta de umbrales numéricos validados bibliográficamente.
+- La clasificación de la Escala de Bristol constituye una aproximación orientativa basada en intervalos porcentuales de humedad (Lewis & Heaton, 1997).
 
 ### 11. Contacto Académico
 - Danna Sofía Velandia Arciniegas – *dsvelandiag@ufpso.edu.co*
