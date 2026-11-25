@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.integrate import solve_ivp
-from datos_parametros.parametros import (
+from Datos_Parametros.parametros import (
     WHC_SOLUBLE, WHC_INSOLUBLE, K_ABS, K_TRANS, 
     FRACCION_AGUA_COLON, HORIZONTE_TIEMPO_HORAS, PASO_TIEMPO_EVALUACION
 )

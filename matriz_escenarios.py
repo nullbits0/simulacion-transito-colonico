@@ -4,7 +4,7 @@ Proyecto: Simulación Tránsito Colónico (UFPSO)
 """
 
 import pandas as pd
-from simulador import modelo_colon, clasificar_bristol, calcular_humedad_fecal
+from Modelo_Fuente.simulador import modelo_colon, clasificar_bristol, calcular_humedad_fecal
 from scipy.integrate import solve_ivp
 import numpy as np
 
