@@ -85,7 +85,9 @@ class SimuladorColon:
         # Cálculo del porcentaje de Humedad Fecal residual en el compartimento final (k=3)
         masa_total_fecal = Mw3 + Mfs3 + Mfi3
         # Evitar división por cero en t=0
-        humedad_fecal = np.where(masa_total_fecal > 0, (Mw3 / masa_total_fecal) * 100.0, 0.0)
+        humedad_fecal = np.zeros_like(masa_total_fecal)
+        mask = masa_total_fecal > 0
+        humedad_fecal[mask] = (Mw3[mask] / masa_total_fecal[mask]) * 100.0
         
         return {
             't': solucion.t,
