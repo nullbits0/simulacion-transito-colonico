@@ -54,7 +54,7 @@ pip install -r requirements.txt
 - **Datos_Parametros/parametros.py** Contiene los coeficientes fisiológicos (WHC_s, WHC_i, k_abs, k_trans) y configuraciones de simulación.
 - **Datos_Parametros/diccionario_parametros.md:** Documenta la fuente primaria de cada parámetro.
 
-### 7. onfiguración de la Corrida Base
+### 7. Configuración de la Corrida Base
 - **Agua Total (A):** 2000 mL/día
 - **Fibra Soluble (F_s):** 10.0 g/día
 - **Fibra Insoluble (F_i):** 20.0 g/día
